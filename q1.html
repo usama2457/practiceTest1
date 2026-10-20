@@ -3,23 +3,35 @@
 
 <head>
     <title>Question 1</title>
-    <!-- 
-a) Edit the markup for section#1 to have a level 1 heading that says "Emphasis and strengthened text"
-
-b) Edit the markup for section#2 to also have a 2nd level heading that says "... Separating content from presentation"
-
-c) Edit the markup for section#1 to have a paragraph with some emphasized and some strong text. Make sure that you use <strong> and <em> tags.
-
-d) Make a level 3 heading in section#2 of your markdown that says "Explanation"
-
-e) Write a paragraph explaining why the elements that you find in part c are a better choice than <i> and <b> tags.
-        -->
 </head>
 
 <body>
     <section id="1">
+        <h1>Emphasis and strengthened text</h1>
+        <p>
+            When I write a sentence, I can put <em>stress</em> on one word to
+            change how it sounds, like "I <em>said</em> tomorrow." If a
+            warning really matters, I mark it as
+            <strong>important</strong>, like <strong>do not delete this
+            folder</strong>.
+        </p>
     </section>
+
     <section id="2">
+        <h2>Separating content from presentation</h2>
+        <h3>Explanation</h3>
+        <p>
+            I would pick &lt;em&gt; and &lt;strong&gt; over &lt;i&gt; and
+            &lt;b&gt; because they tell the browser what the text
+            <em>means</em>, not just what it looks like. If I use &lt;i&gt;, I
+            am only saying "slant this text," and that could be for a book
+            title, a foreign word, or nothing in particular. With &lt;em&gt;,
+            I am saying this word has stress. A screen reader can use that to
+            change its voice, and a search engine can tell which text is
+            important. Also, if I want a different look later, like red text
+            instead of bold, I can change it in CSS and leave the HTML alone.
+            That keeps the content and the style in separate places.
+        </p>
     </section>
 </body>
 

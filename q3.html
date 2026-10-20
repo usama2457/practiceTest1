@@ -3,15 +3,108 @@
 
 <head>
     <title>Question 3</title>
-    <!-- 
-Write an article using semantic markup, header, footer, main and section. In the article compare and contrast old fashioned typesetting with desktop pubishing, html and css.
-Color the header with white text on a blue background, the footer with white text on a green background, the main portion with black text o a parchment colored background. 
-Make the nouns in the header and footer have a text weight of 600, while the rest of the text has a font-weight of 400.
-    -->
-        
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* Everything is weight 400, including headings */
+        h1, h2, h3, p {
+            font-weight: 400;
+        }
+
+        /* Nouns in the header and footer */
+        .noun {
+            font-weight: 600;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: green;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            background-color: #f1e4c3; /* parchment */
+            color: black;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>From <span class="noun">Metal</span> to <span class="noun">Markup</span></h1>
+        <p>
+            A look at how <span class="noun">typesetting</span> changed from
+            hand-set <span class="noun">type</span> to
+            <span class="noun">code</span>.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Old Fashioned Typesetting</h2>
+            <p>
+                Before computers, a printer built each page by hand. A worker
+                picked small metal letters one at a time and placed them in a
+                frame. Every space, line, and margin was set by hand. If there
+                was a mistake, the worker had to fix the metal by hand. It was
+                slow, but the printer had full control over how the page looked.
+            </p>
+        </section>
+
+        <section>
+            <h2>Desktop Publishing</h2>
+            <p>
+                Desktop publishing moved this work onto a computer. A person
+                could now type text, drag it around the page, and change the
+                font with a click. Mistakes were easy to fix. The page on the
+                screen looked like the page that would be printed, so the
+                designer could see the result right away.
+            </p>
+        </section>
+
+        <section>
+            <h2>HTML and CSS</h2>
+            <p>
+                HTML and CSS work in a different way. HTML describes what each
+                part of the page is, like a heading, a paragraph, or a footer.
+                CSS describes how those parts look, like their color, font, and
+                spacing. The page is not fixed in size. It changes to fit a
+                phone, a laptop, or a large monitor.
+            </p>
+        </section>
+
+        <section>
+            <h2>Compare and Contrast</h2>
+            <p>
+                All three methods have the same goal, which is to make text
+                easy to read. Typesetting and desktop publishing both make one
+                fixed page, while HTML and CSS make a page that can change
+                shape. In typesetting, the printer controls every detail by
+                hand. In desktop publishing, the software helps with the
+                layout. With HTML and CSS, the browser builds the page from
+                the rules the writer gives it. Typesetting also costs the most
+                time and materials, while a web page can be changed in seconds
+                and shared with anyone.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Written for my <span class="noun">web design</span>
+            <span class="noun">class</span>. <span class="noun">Question</span> 3.
+        </p>
+    </footer>
 </body>
 
 </html>
